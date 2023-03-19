@@ -1,4 +1,4 @@
-package com.aoc.days;
+//package com.aoc.days;
 
 import java.io.IOException;
 //import java.net.URISyntaxException;
@@ -12,9 +12,9 @@ import java.util.stream.Stream;
 public class Day1 {
 
     public static void main(String[] args) throws IOException { //}, URISyntaxException {
-        Stream<String> lines = Files.lines(Path.of("src/main/resources/day1.txt"));
-//        Stream<String> lines = Files.lines(Path.of(Day1.class.getClassLoader().getResource("day1.txt").toURI()));
-//        lines.forEach(System.out::println);
+        Stream<String> lines = Files.lines(Path.of("day1.txt"));
+        //Stream<String> lines = Files.lines(Path.of(Day1.class.getClassLoader().getResource("day1.txt").toURI()));
+        //lines.forEach(System.out::println);
 
         List<Long> calories = new ArrayList<>();
         AtomicLong tempCalorie = new AtomicLong();
